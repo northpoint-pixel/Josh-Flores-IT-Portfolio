@@ -402,4 +402,85 @@ footer {
   .about-text p {
     font-size: 1rem;
   }
+  .home-overview {
+  padding: 20px 0 80px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.featured-section {
+  padding: 80px 0;
+}
+
+.featured-section h2 {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 0 28px var(--shadow);
+}
+
+.feature-card h3 {
+  color: var(--primary);
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.feature-card a {
+  color: var(--primary);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.cta-section {
+  padding: 50px 0 100px;
+}
+
+.cta-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 44px;
+  box-shadow: 0 0 34px var(--shadow);
+}
+
+.cta-card p {
+  color: var(--muted);
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 950px) {
+  .overview-grid,
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-section {
+    padding: 50px 0;
+  }
+
+  .cta-card {
+    padding: 28px;
+  }
 }
