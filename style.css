@@ -213,7 +213,10 @@ footer {
     padding-top: 60px;
   }
   .page-section {
-  padding: 80px 8%;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 100px 10% 80px;
   min-height: 80vh;
 }
 
