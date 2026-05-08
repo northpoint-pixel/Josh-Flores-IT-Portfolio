@@ -289,6 +289,14 @@ p {
   color: var(--muted);
   font-weight: 900;
   margin-bottom: 22px;
+  
+  overflow: hidden;
+}
+
+.about-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-profile-card h3 {
