@@ -212,4 +212,52 @@ footer {
   .hero {
     padding-top: 60px;
   }
+  .page-section {
+  padding: 80px 8%;
+  min-height: 80vh;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 0 30px var(--shadow);
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, transparent, var(--bg-2));
+}
+
+.profile-card h3 {
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
