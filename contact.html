@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Joshua Flores</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    .contact-wrapper {
+      width: min(1150px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .contact-card,
+    .contact-info {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 0 30px var(--shadow);
+    }
+
+    .contact-card h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      margin-bottom: 16px;
+    }
+
+    .contact-card p,
+    .contact-info p,
+    .contact-info li {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .contact-form {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      color: var(--text);
+      font-size: 1rem;
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 20px var(--shadow);
+    }
+
+    .contact-form textarea {
+      min-height: 180px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      width: fit-content;
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 18px;
+      font-size: 1.4rem;
+    }
+
+    .contact-info ul {
+      margin-top: 18px;
+      padding-left: 18px;
+    }
+
+    .contact-info li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 950px) {
+
+      .contact-wrapper {
+        width: min(100% - 36px, 1150px);
+        padding: 60px 0;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card,
+      .contact-info {
+        padding: 26px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">JF<span>Cyber</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+  </header>
+
+  <main class="contact-wrapper">
+
+    <section class="contact-grid">
+
+      <div class="contact-card">
+
+        <p class="tagline">Contact Me</p>
+
+        <h1>Let’s Connect</h1>
+
+        <p>
+          If you would like to discuss opportunities, projects, collaboration,
+          or networking within IT and cybersecurity, feel free to send a message.
+        </p>
+
+       <form
+  action="https://formspree.io/f/xojrrvnd"
+  method="POST"
+  class="contact-form"
+>
+
+  <input
+    type="hidden"
+    name="_next"
+    value="https://northpoint-pixel.github.io/thanks.html"
+  >
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          >
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn primary">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <aside class="contact-info">
+
+        <h3>Professional Interests</h3>
+
+        <p>
+          I am currently focused on growing my experience in:
+        </p>
+
+        <ul>
+          <li>IT Support</li>
+          <li>Cybersecurity</li>
+          <li>Security Operations</li>
+          <li>System Administration</li>
+          <li>Technical Troubleshooting</li>
+        </ul>
+
+        <h3 style="margin-top: 32px;">Portfolio Focus</h3>
+
+        <p>
+          This portfolio highlights academic projects, hands-on labs,
+          cybersecurity learning, technical documentation, and professional
+          development toward entry-level IT and cybersecurity roles.
+        </p>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Joshua Flores | IT & Cybersecurity Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
