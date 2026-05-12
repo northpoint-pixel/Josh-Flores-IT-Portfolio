@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Joshua Flores</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    .thanks-wrapper {
+      width: min(1000px, calc(100% - 48px));
+      margin: 0 auto;
+      min-height: calc(100vh - 86px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 0;
+    }
+
+    .thanks-card {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 60px 42px;
+      text-align: center;
+      box-shadow: 0 0 38px var(--shadow);
+    }
+
+    .thanks-icon {
+      font-size: 5rem;
+      margin-bottom: 22px;
+    }
+
+    .thanks-card h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      margin-bottom: 18px;
+    }
+
+    .thanks-card p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 32px;
+      line-height: 1.8;
+      font-size: 1.08rem;
+    }
+
+    .thanks-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+
+      .thanks-wrapper {
+        width: min(100% - 36px, 1000px);
+      }
+
+      .thanks-card {
+        padding: 40px 24px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">JF<span>Cyber</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+  </header>
+
+  <main class="thanks-wrapper">
+
+    <section class="thanks-card">
+
+      <div class="thanks-icon">✓</div>
+
+      <p class="tagline">Message Sent</p>
+
+      <h1>Thank You!</h1>
+
+      <p>
+        Your message has been successfully submitted.
+        I appreciate you reaching out and will respond as soon as possible.
+      </p>
+
+      <div class="thanks-buttons">
+        <a href="index.html" class="btn primary">
+          Return Home
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Joshua Flores | IT & Cybersecurity Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
